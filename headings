@@ -1,0 +1,132 @@
+# Four Types - EVENT_FCNTL, EVENT_CLOSE, EVENT_CREATE_OBJECT, FILE_OBJECT_UNIX_SOCKET
+
+
+
+
+
+
+
+for line 1:
+
+{"datum":{"com.bbn.tc.schema.avro.cdm18.Event":{"uuid":"CCFF141A-FFB8-54BC-AC84-275BCE59F904","sequence":{"long":18672873},"type":"EVENT_FCNTL","threadId":{"int":100106},"hostId":"83C8ED1F-5045-DBCD-B39F-918F0DF4F851","subject":{"com.bbn.tc.schema.avro.cdm18.UUID":"269A60A2-39BE-11E8-B8CE-15D78AC88FB6"},"predicateObject":null,"predicateObjectPath":null,"predicateObject2":null,"predicateObject2Path":null,"timestampNanos":1523432873730746985,"name":{"string":"aue_fcntl"},"parameters":{"array":[{"size":-1,"type":"VALUE_TYPE_CONTROL","valueDataType":"VALUE_DATA_TYPE_INT","isNull":false,"name":{"string":"cmd"},"runtimeDataType":null,"valueBytes":{"bytes":"04"},"provenance":null,"tag":null,"components":null}]},"location":null,"size":null,"programPoint":null,"properties":{"map":{"host":"83c8ed1f-5045-dbcd-b39f-918f0df4f851","return_value":"0","fd":"4","exec":"python2.7","ppid":"1"}}}},"CDMVersion":"18","source":"SOURCE_FREEBSD_DTRACE_CADETS"}
+
+
+datum:
+    com.bbn.tc.schema.avro.cdm18.Event:
+        uuid: CCFF141A-FFB8-54BC-AC84-275BCE59F904 #mentioned
+        sequence:
+            long: 18672873 #mentioned
+        type: EVENT_FCNTL #mentioned
+        threadId:
+            int: 100106 #mentioned
+        hostId: 83C8ED1F-5045-DBCD-B39F-918F0DF4F851 #mentioned
+        subject:
+            com.bbn.tc.schema.avro.cdm18.UUID: 269A60A2-39BE-11E8-B8CE-15D78AC88FB6
+        predicateObject: null
+        predicateObjectPath: null
+        predicateObject2: null
+        predicateObject2Path: null
+        timestampNanos: 1523432873730746985 #mentioned
+        name:
+            string: aue_fcntl #mentioned
+        parameters: #mentioned
+            array:
+                - size: -1
+                  type: VALUE_TYPE_CONTROL
+                  valueDataType: VALUE_DATA_TYPE_INT
+                  isNull: false
+                  name:
+                      string: cmd
+                  runtimeDataType: null
+                  valueBytes:
+                      bytes: 04
+                  provenance: null
+                  tag: null
+                  components: null
+        location: null
+        size: null
+        programPoint: null
+        properties: #mentioned
+            map:
+                host: 83c8ed1f-5045-dbcd-b39f-918f0df4f851
+                return_value: 0
+                fd: 4
+                exec: python2.7
+                ppid: 1
+    CDMVersion: 18
+    source: SOURCE_FREEBSD_DTRACE_CADETS
+
+
+
+
+
+
+
+for lin 5:
+
+{"datum":{"com.bbn.tc.schema.avro.cdm18.Event":{"uuid":"1CCAFFB6-A9AA-5A46-B339-1D08923F94A2","sequence":{"long":18672876},"type":"EVENT_CLOSE","threadId":{"int":100106},"hostId":"83C8ED1F-5045-DBCD-B39F-918F0DF4F851","subject":{"com.bbn.tc.schema.avro.cdm18.UUID":"269A60A2-39BE-11E8-B8CE-15D78AC88FB6"},"predicateObject":{"com.bbn.tc.schema.avro.cdm18.UUID":"A449039E-3D5C-11E8-B8CE-15D78AC88FB6"},"predicateObjectPath":null,"predicateObject2":null,"predicateObject2Path":null,"timestampNanos":1523432874730745630,"name":{"string":"aue_close"},"parameters":{"array":[]},"location":null,"size":null,"programPoint":null,"properties":{"map":{"host":"83c8ed1f-5045-dbcd-b39f-918f0df4f851","return_value":"0","fd":"17","exec":"python2.7","ppid":"1"}}}},"CDMVersion":"18","source":"SOURCE_FREEBSD_DTRACE_CADETS"}
+
+
+datum:
+    com.bbn.tc.schema.avro.cdm18.Event:
+        uuid: 1CCAFFB6-A9AA-5A46-B339-1D08923F94A2 #mentioned
+        sequence:
+            long: 18672876 #mentioned
+        type: EVENT_CLOSE #mentioned
+        threadId:
+            int: 100106 #mentioned
+        hostId: 83C8ED1F-5045-DBCD-B39F-918F0DF4F851 #mentioned
+        subject:
+            com.bbn.tc.schema.avro.cdm18.UUID: 269A60A2-39BE-11E8-B8CE-15D78AC88FB6
+        predicateObject:
+            com.bbn.tc.schema.avro.cdm18.UUID: A449039E-3D5C-11E8-B8CE-15D78AC88FB6
+        predicateObjectPath: null
+        predicateObject2: null
+        predicateObject2Path: null
+        timestampNanos: 1523432874730745630 #mentioned
+        name:
+            string: aue_close #mentioned
+        parameters: #mentioned as []
+            array: []
+        location: null
+        size: null
+        programPoint: null
+        properties: #mentioned
+            map:
+                host: 83c8ed1f-5045-dbcd-b39f-918f0df4f851
+                return_value: 0
+                fd: 17
+                exec: python2.7
+                ppid: 1
+    CDMVersion: 18
+    source: SOURCE_FREEBSD_DTRACE_CADETS
+
+
+
+
+
+
+
+
+for line 7: 
+
+{"datum":{"com.bbn.tc.schema.avro.cdm18.FileObject":{"uuid":"A4E19B6E-3D5C-11E8-B8CE-15D78AC88FB6","baseObject":{"hostId":"83C8ED1F-5045-DBCD-B39F-918F0DF4F851","permission":null,"epoch":null,"properties":{"map":{}}},"type":"FILE_OBJECT_UNIX_SOCKET","fileDescriptor":null,"localPrincipal":null,"size":null,"peInfo":null,"hashes":null}},"CDMVersion":"18","source":"SOURCE_FREEBSD_DTRACE_CADETS"}
+
+
+datum:
+    com.bbn.tc.schema.avro.cdm18.FileObject:
+        uuid: A4E19B6E-3D5C-11E8-B8CE-15D78AC88FB6
+        baseObject:
+            hostId: 83C8ED1F-5045-DBCD-B39F-918F0DF4F851
+            permission: null
+            epoch: null
+            properties:
+                map: {}
+        type: FILE_OBJECT_UNIX_SOCKET
+        fileDescriptor: null
+        localPrincipal: null
+        size: null
+        peInfo: null
+        hashes: null
+    CDMVersion: 18
+    source: SOURCE_FREEBSD_DTRACE_CADETS
